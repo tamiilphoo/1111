@@ -1,0 +1,59 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #ffafd2, #ffc8dd);
+  padding: 10px 20px;
+  border-bottom: 3px solid #ffcde4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fade-in-animation {
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.nav-logo {
+  font-size: 1.9rem;
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f9f9f9;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

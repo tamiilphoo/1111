@@ -1,0 +1,64 @@
+/* src/pages/AuthForms.css */
+
+.auth-container {
+  width: 350px;
+  margin: 40px auto;
+  background: #ffe4ec;
+  border: 2px solid #ffc2d1;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-title {
+  font-family: 'Poppins', sans-serif;
+  color: #ff6290;
+  margin-bottom: 20px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.auth-form label {
+  font-weight: 500;
+  margin-left: 2px;
+  color: #555;
+}
+
+.auth-form input {
+  border: 1px solid #ffc2d1;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.auth-button {
+  background-color: #ff92b4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #ff7fa0;
+}
+
+/* Анімація fade-in */
+.fade-in-animation {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
